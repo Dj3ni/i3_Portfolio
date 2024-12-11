@@ -1,0 +1,34 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1725624848068" ID="ID_974497765" MODIFIED="1725624948211" TEXT="HomePage index.html">
+<node CREATED="1725625001277" ID="ID_1032791899" MODIFIED="1725625353161" POSITION="right" TEXT="Fr">
+<node CREATED="1725625235032" ID="ID_1034015353" MODIFIED="1725625358215" TEXT="Moi-je a_propos.html"/>
+<node CREATED="1725625483050" ID="ID_1202904529" MODIFIED="1725625495178" TEXT="Parcours parcours.html">
+<node CREATED="1725625498091" ID="ID_34814165" MODIFIED="1725625518046" TEXT="Jobs jobs.html"/>
+<node CREATED="1725625520860" ID="ID_112559814" MODIFIED="1725625552387" TEXT="Etudes etudes.html"/>
+</node>
+<node CREATED="1725625615119" ID="ID_790509400" MODIFIED="1725625662240" TEXT="Webdev ">
+<node CREATED="1725625879186" ID="ID_811937444" LINK="https://interface3.be/fr" MODIFIED="1725625940039" TEXT="interface 3"/>
+<node CREATED="1725626003356" ID="ID_1942780407" MODIFIED="1725626008582" TEXT="portfolio"/>
+</node>
+<node CREATED="1725625667186" ID="ID_1123276172" MODIFIED="1725625844050" TEXT="CV"/>
+<node CREATED="1725626018767" ID="ID_418349483" LINK="mailto: dj3n.dev@gmail.com" MODIFIED="1725626075856" TEXT="contact"/>
+<node CREATED="1725626140947" ID="ID_996024149" MODIFIED="1725626293394">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="../../../../../../Pictures/6-qui-prend-1.jpeg" />
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1725625088590" ID="ID_322074725" MODIFIED="1725625093953" POSITION="left" TEXT="En">
+<node CREATED="1725625368218" ID="ID_869292649" MODIFIED="1725625388412" TEXT="About me about.html"/>
+<node CREATED="1725625390307" ID="ID_1100860454" MODIFIED="1725625405765" TEXT="Contact contact.html"/>
+<node CREATED="1725625431739" ID="ID_177972425" MODIFIED="1725625431739" TEXT=""/>
+</node>
+</node>
+</map>

@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-Light.ttf");
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 50px 90vh;
+    grid-template-areas: "side navbar"
+                        "side mountains";
+}
+
+.navbar {
+    grid-area: side;
+}
+
+.burger-navbar {
+    display: none;
+    grid-area: navbar;
+}
+
+.visible {
+    display: block;
+    z-index: 2;
+}
+
+.pdf {
+    width: 80%;
+    height: 900px;
+    position: fixed;
+    justify-self: center;
+    top: 55px;
+}
+
+
+.mountains {
+    grid-area: mountains;
+    /* border:2px solid; */
+    display: grid;
+    grid-template-columns: 5% 22% 22% 22% 22% 22%;
+    grid-template-rows:  10% 5% 5% 15% 5% 45% 5%;
+    grid-template-areas:    "title title title title title title"
+                            ". date1 . date2 . ."
+                            ". top1 . top2 . ."
+                            ". . date3 . date4 ."
+                            ". . bottom1 . bottom2 ."
+                            "start . . . . ."
+                            ". credits credits credits credits .";
+    /* background-image: url('/SchoolProject/assets/images/mountains.png');
+    background-repeat: no-repeat;
+    background-size: contain; */
+    /* width: 100%; */
+}
+
+#background {
+    grid-row: 3/7;
+    grid-column: 2/6;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Dancing Script;
+}
+
+.hiker {
+    grid-area: start;
+    align-self: end;
+    justify-self: center;
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.hiker img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.credits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: credits;
+}
+
+.credits p a{
+    text-decoration: none;
+    color: #000;
+    font-size: smaller;
+    font-family: Poppins;
+}
+
+/************** Dates *************/
+
+.date {
+    font-family: Dancing Script;
+    font-weight: bolder;
+    box-shadow: #000;
+}
+
+.top1 {
+    grid-area: date1;
+    justify-self: end;
+    align-self: start;
+}
+
+.top2 {
+    grid-area: date2;
+    align-self: start;
+    justify-self: center;
+
+}
+
+.bottom1 {
+    grid-area: date3;
+    align-self: center;
+    justify-self: center;
+}
+
+.bottom2 {
+    grid-area: date4;
+    align-self: center;
+    justify-self: center;
+}
+
+/********* Modal box **************/
+
+.modal {
+    grid-area: mountain;
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #d9d9d9;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    cursor: pointer;
+}

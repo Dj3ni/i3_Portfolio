@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+
+body {
+    margin: 0;
+    background-color: #19526a;
+    font-family: Dancing Script;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.title {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f7f7f5;
+}
+
+.intro {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    /* background-color: #d9d9d9; */
+    border-radius: 20px;
+    position: relative;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #19526a;
+}
+.en-dialog, .fr-dialog {
+    position: relative;
+    background-color: #f7f7f5;
+    opacity: 0.5;
+    padding: 5px 10px;
+    border-radius: 20px;
+    flex-basis: 20%;
+    height: fit-content;
+    /* margin: 100px 30px 0 30px; */
+    z-index: 2;
+    box-shadow: rgba(247, 247, 245,0.5) 2.4px 2.4px 3.2px;
+}
+
+.en-dialog::after {
+    position: absolute;
+    content: '';
+    top: 40%;
+    right: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 75px ; 
+    border-color: transparent transparent transparent rgba(247, 247, 245,0.5);
+    z-index: 1;
+}
+
+.fr-dialog::before {
+    position: absolute;
+    content: '';
+    top: 40%;
+    left: -50px;
+    width: 0; 
+    height: 0;
+    border-style: solid;
+    border-width: 20px 75px 20px 0 ; 
+    border-color: transparent rgba(247, 247, 245,0.5) transparent transparent;
+    z-index: -1;
+}

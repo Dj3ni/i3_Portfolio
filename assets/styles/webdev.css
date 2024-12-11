@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Share Tech Mono";
+    src: url("../fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-Light.ttf");
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 50px 35vh 65vh;
+    grid-template-areas: "side navbar"
+                        "side intro"
+                        "side snake";
+    font-family: Share Tech Mono;
+}
+
+.navbar {
+    grid-area: side;
+}
+
+.burger-navbar {
+    display: none;
+    grid-area: navbar;
+}
+
+.visible {
+    display: block;
+    z-index: 2;
+}
+
+.burger-navbar .navlinks a {
+    font-family: Share Tech Mono;
+}
+
+.pdf {
+    width: 80%;
+    height: 900px;
+    position: fixed;
+    justify-self: center;
+    top: 55px;
+}
+
+.intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.snake{
+    grid-area: snake;
+    width: calc(68px * 6);
+    margin: 15px auto 15px auto;    
+}
+
+svg{
+    /* width:20%;
+    margin:0 auto; */
+    cursor: pointer;
+}
+.hex{
+    stroke-width:2;
+    stroke: #000;
+    fill-opacity:0.6;
+    transition:fill-opacity .8s;
+    padding: 5px;
+    }
+
+svg:hover .hex {
+fill-opacity:1;
+}
+
+/* test flex */
+
+
+.head {
+    height:100px;
+    width: 100px;
+    margin-bottom: 0;
+}
+
+.head img {
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    /* height: 56px; */
+}
+.row:first-child{
+    justify-content: flex-end;
+}
+.row:nth-child(odd) .icon{
+    margin : 0 20px;
+}
+
+.row:nth-child(even){
+    flex-direction: row;
+    justify-content: center;
+}
+.row:nth-child(odd){
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.row:nth-child(5n){
+    flex-direction: row;
+}
+.row:last-child{
+    justify-content: center;
+}
+
+.snake .icon{
+    width: 64px;
+    height: 64px;
+}
+
+.rattle {
+    height:100%;
+    width: 100%;
+}
