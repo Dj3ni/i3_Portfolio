@@ -19,7 +19,7 @@
     
   </head>
   <body>
-    <img src="../../../../../../Pictures/6-qui-prend-1.jpeg" />
+    <img src="./../../../../../../Pictures/6-qui-prend-1.jpeg" />
   </body>
 </html>
 </richcontent>
