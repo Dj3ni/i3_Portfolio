@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 10% 90%;
     grid-template-rows: 50px 90vh;
-    grid-template-areas: "side navbar"
+    grid-template-areas: ". navbar"
                         "side mountains";
 }
 
@@ -29,7 +29,7 @@ body {
 
 .visible {
     display: block;
-    z-index: 2;
+    z-index: 100;
 }
 
 .pdf {
@@ -39,7 +39,6 @@ body {
     justify-self: center;
     top: 55px;
 }
-
 
 .mountains {
     grid-area: mountains;
@@ -54,7 +53,7 @@ body {
                             ". . bottom1 . bottom2 ."
                             "start . . . . ."
                             ". credits credits credits credits .";
-    /* background-image: url('/SchoolProject/assets/images/mountains.png');
+    /* background-image: url('../../assets/images/mountains.png');
     background-repeat: no-repeat;
     background-size: contain; */
     /* width: 100%; */
@@ -81,8 +80,8 @@ body {
     justify-self: center;
     height: 50px;
     width: 50px;
-    transition-duration: 2s;
-    transition-timing-function: ease-in-out;
+    /* transition-duration: 2s;
+    transition-timing-function: ease-in-out; */
 }
 
 .hiker img {

@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 10% 90%;
     grid-template-rows: 50px 90vh;
-    grid-template-areas: "side navbar"
+    grid-template-areas: ". navbar"
                         "side mountains";
 }
 
@@ -53,7 +53,7 @@ body {
                             ". . bottom1 . bottom2 ."
                             "start . . . . ."
                             ". credits credits credits credits .";
-    /* background-image: url('/SchoolProject/assets/images/mountains.png');
+    /* background-image: url('../../assets/images/mountains.png');
     background-repeat: no-repeat;
     background-size: contain; */
     /* width: 100%; */

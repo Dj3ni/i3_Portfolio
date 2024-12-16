@@ -153,7 +153,7 @@ h1 {
 }
 
 .card {
-    width: 10%;
+    width: 20%;
     height: 90%;
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
@@ -233,15 +233,15 @@ h1 {
     background-color: rgba(255,255,255,0.8);
     transition: 0.5s;
     width: 100%;
-    height: 70%;
+    height: 60%;
     display: flex;
     /* display: none; */
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items:flex-start;
+    text-align:center;
 }
 
-.cards .card:hover .description {
+.card:hover .description {
     transform: translateY(-120px);
     /* display: block; */
 }

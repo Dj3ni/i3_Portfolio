@@ -6,7 +6,7 @@ const dates = document.querySelectorAll(".date");
 const modal = document.querySelector(".modal");
 const modalContent = document.querySelector(".modal-content");
 
-window.onclick = function(event) {
+modal.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }

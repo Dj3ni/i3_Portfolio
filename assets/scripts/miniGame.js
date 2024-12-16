@@ -5,13 +5,13 @@ const divGames = document.querySelectorAll(".scratchpad");
 console.log(divGames);
 
 const scratchpadConfigs = {
-    dixit: '/SchoolProject/assets/images/games/dixit.jpg',
-    akropolis: '/SchoolProject/assets/images/games/akropolis.jpg',
-    cantStop: '/SchoolProject/assets/images/games/cantStop.jpg',
-    scythe: '/SchoolProject/assets/images/games/scythe.jpg',
-    kingdomino: '/SchoolProject/assets/images/games/kingdomino.jpg',
-    ticketToRide: '/SchoolProject/assets/images/games/ticketToRide.jpg',
-    snake: '/SchoolProject/assets/images/games/snake.png'
+    dixit: '../../assets/images/games/dixit.jpg',
+    akropolis: '../../assets/images/games/akropolis.jpg',
+    cantStop: '../../assets/images/games/cantStop.jpg',
+    scythe: '../../assets/images/games/scythe.jpg',
+    kingdomino: '../../assets/images/games/kingdomino.jpg',
+    ticketToRide: '../../assets/images/games/ticketToRide.jpg',
+    snake: '../../assets/images/games/snake.png'
 };
 
 Object.keys(scratchpadConfigs).forEach(id =>{
@@ -19,7 +19,7 @@ Object.keys(scratchpadConfigs).forEach(id =>{
     size        : 50,       
     bg:  scratchpadConfigs[id],
     realtime    : true, 
-    fg: '/SchoolProject/assets/images/games/police.png',
+    fg: '../../assets/images/games/police.png',
     'cursor': 'url("http://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
 });
 
@@ -27,7 +27,7 @@ Object.keys(scratchpadConfigs).forEach(id =>{
 
 // $('.scratchpad').wScratchPad({
 //     size        : 50,       
-//     bg:  '/SchoolProject/assets/images/games/scythe.jpg',
+//     bg:  '../../assets/images/games/scythe.jpg',
 //     realtime    : true, 
 //     fg: 'http://jennamolby.com/scratch-and-win/images/overlay.png',
 //     'cursor': 'url("http://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',

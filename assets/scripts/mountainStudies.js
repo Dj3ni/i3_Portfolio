@@ -4,52 +4,54 @@ const hiker = document.querySelector(".hiker");
 const dates = document.querySelectorAll(".date");
 // console.log(dates);
 const modal = document.querySelector(".modal");
+console.log(modal);
 const modalContent = document.querySelector(".modal-content");
+console.log(modalContent);
 
-window.onclick = function(event) {
+modal.addEventListener("click", function(event) {
+    // console.log("coucou");
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+});
 
-window.addEventListener("scroll", function(){
-    dates.forEach(date =>{
-    if (date.classList.contains("top1")) {
-        moveHiker("top1", "end");
-        displayModal(
-            date.textContent,
-            "CESS - Grande Distinction",
-            "Institut des Dames de Marie - Woluwé-Saint-Lambert",
-            "Sciences sociales - Latin - Langues"
-        );
-    } else if (date.classList.contains("top2")) {
-        moveHiker("top2", "end");
-        displayModal(
-            date.textContent,
-            "Certificat Gestion de Base",
-            "Bruxelles Formation - Bruxelles",
-            "Gestion de Base"
-        );
-    } else if (date.classList.contains("bottom1")) {
-        moveHiker("bottom1", "center");
-        displayModal(
-            date.textContent,
-            "",
-            "Institut Libre Marie Haps - Ixelles",
-            "Logopédie"
-        );
-    } else if (date.classList.contains("bottom2")) {
-        moveHiker("bottom2", "center");
-        displayModal(
-            date.textContent,
-            "CEE...",
-            "Interface 3 - Bruxelles",
-            "Web Developer Application"
-        );
-    }
-    })
-})
-
+// window.addEventListener("scroll", function(){
+//     dates.forEach(date =>{
+//     if (date.classList.contains("top1")) {
+//         moveHiker("top1", "end");
+//         displayModal(
+//             date.textContent,
+//             "CESS - Grande Distinction",
+//             "Institut des Dames de Marie - Woluwé-Saint-Lambert",
+//             "Sciences sociales - Latin - Langues"
+//         );
+//     } else if (date.classList.contains("top2")) {
+//         moveHiker("top2", "end");
+//         displayModal(
+//             date.textContent,
+//             "Certificat Gestion de Base",
+//             "Bruxelles Formation - Bruxelles",
+//             "Gestion de Base"
+//         );
+//     } else if (date.classList.contains("bottom1")) {
+//         moveHiker("bottom1", "center");
+//         displayModal(
+//             date.textContent,
+//             "",
+//             "Institut Libre Marie Haps - Ixelles",
+//             "Logopédie"
+//         );
+//     } else if (date.classList.contains("bottom2")) {
+//         moveHiker("bottom2", "center");
+//         displayModal(
+//             date.textContent,
+//             "CEE...",
+//             "Interface 3 - Bruxelles",
+//             "Web Developer Application"
+//         );
+//     }
+//     })
+// })
 
 dates.forEach(date => {
     // console.log(date.textContent);
@@ -87,7 +89,7 @@ dates.forEach(date => {
             moveHiker("bottom2","center");
             displayModal(
                 date.textContent,
-                "CEE...",
+                "CECAF",
                 "Interface 3 - Bruxelles", 
                 "Web Developer Application");
         }

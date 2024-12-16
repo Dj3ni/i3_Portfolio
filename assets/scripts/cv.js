@@ -3,11 +3,12 @@ const CV_BUTTON = document.getElementById("cv");
 const PDF_DIV = document.querySelector(".pdf")
 // console.log(PDF_DIV);
 
-window.onclick = function(event) {
+window.addEventListener("click",function(event) {
+    console.log("toto");
     if (!PDF_DIV.contains(event.target) && event.target !== CV_BUTTON) {
         PDF_DIV.classList.remove("visible"); // Retire la classe "visible"
     }
-}
+});
 
 CV_BUTTON.addEventListener("click", function(event){
     event.preventDefault();
