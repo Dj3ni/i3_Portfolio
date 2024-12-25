@@ -164,17 +164,17 @@ body {
     position: relative;
     filter: drop-shadow(0 0 0.75rem black);
 }
-
+/*
 .image {
     width: 100%;
     height:100%;
     clip-path: polygon(
-    0% 0%, 100% 0%, 100% 100%, 0% 100%, /* Tout le rectangle de l'image */
-    0% 45%, 25% 45%, 25% 10%, 40% 10%, 45% 0%, 0% 0%  /* Trou correspondant à la découpe originale */
+    0% 0%, 100% 0%, 100% 100%, 0% 100%,  Tout le rectangle de l'image
+    0% 45%, 25% 45%, 25% 10%, 40% 10%, 45% 0%, 0% 0%  Trou correspondant à la découpe originale
 );
-}
+}/* 
 
-.animated-part {
+/* .animated-part {
     position: absolute;
     top:0;
     left:0;
@@ -182,13 +182,13 @@ body {
     height: 100%;
     clip-path: polygon(0% 0%, 45% 0%, 45% 10%, 28% 10%, 25% 45%, 0% 45% );
     animation: swing 2s infinite ease-in-out;
-}
+}*/
 /* Animation */
-@keyframes swing {
+/* @keyframes swing {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
-}
+} */ 
 
 /************ Speech bubble ****************/
 .speech-bubble {
