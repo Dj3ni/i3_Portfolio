@@ -35,38 +35,40 @@
 
     <div class="main-contact">
         <h1>Contact me</h1>
-        <div class="contact-form">
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="9f0ca430-552c-4649-aa6e-0ce0099d81d9"/>
-                
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input id ="name" name = "name" type="text" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id ="email" type="email" name = "email" pattern="^[\w\.]+@([\w-]+\.)+[\w-]{2,4}$" required >
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id ="message" name = "message" rows = "10" cols = "50" required></textarea>
-                </div>
-                <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                <div class="send">
-                    <button type="submit">Send</button>
-                    <div>                    
-                        <img src="../../assets/images/contact.png" alt="">
-                    </div>                
-                </div>
-            </form>
-        </div>
-        <div class="search">
-            <div id = "speech-bubble"class ="speech-bubble">
-                <p id = "bubble-content"></p>
+        <div class="content">
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9f0ca430-552c-4649-aa6e-0ce0099d81d9"/>
+                    
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id ="name" name = "name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id ="email" type="email" name = "email" pattern="^[\w\.]+@([\w-]+\.)+[\w-]{2,4}$" required >
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id ="message" name = "message" rows = "10" cols = "50" required></textarea>
+                    </div>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <div class="send">
+                        <button type="submit">Send</button>
+                        <div>                    
+                            <img src="../../assets/images/contact.png" alt="">
+                        </div>                
+                    </div>
+                </form>
             </div>
-            <div class="image-container">
-                <img class= "image"src="../../assets/images/searchInternship.png" alt="searchInternship">    
-                <!-- <img  class = "animated-part" src="../../assets/images/searchInternship.png" alt="searchInternship"> -->
+            <div class="search">
+                <div id = "speech-bubble"class ="speech-bubble">
+                    <p id = "bubble-content"></p>
+                </div>
+                <div class="image-container">
+                    <img class= "image"src="../../assets/images/searchInternship.png" alt="searchInternship">    
+                    <!-- <img  class = "animated-part" src="../../assets/images/searchInternship.png" alt="searchInternship"> -->
+                </div>
             </div>
         </div>
     </div>
