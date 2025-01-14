@@ -1,3 +1,4 @@
+// Filters Project Buttons
 const filters  = document.querySelectorAll(".filters button")
 console.log(filters);
 const projects = document.querySelectorAll(".project")
@@ -20,3 +21,9 @@ filters.forEach(button => {
         })
     })
 });
+
+/***************************** Filters URL Param *****************/
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
