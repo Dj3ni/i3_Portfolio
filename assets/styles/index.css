@@ -2,6 +2,11 @@
     font-family: "Dancing Script";
     src: url("../fonts/DancingScript-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: "Futura Std Light";
+    src: url("../fonts/futura/FuturaStd-Light.woff");
+}
+
 
 body {
     margin: 0;
@@ -17,16 +22,19 @@ body {
 .title {
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: #f7f7f5;
+    height: 40vh;
+    font-size: larger;
 }
 
 .intro {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    height: 60vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .avatar {
@@ -55,7 +63,9 @@ a {
     text-decoration: none;
     color: #19526a;
 }
+
 .en-dialog, .fr-dialog {
+    font-family: Futura Std Light;
     position: relative;
     background-color: #f7f7f5;
     opacity: 0.5;
