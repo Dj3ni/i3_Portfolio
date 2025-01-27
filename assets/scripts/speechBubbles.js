@@ -1,6 +1,6 @@
 const Internship = "I'm searching for an internship as web developer";
-const InternshipDates = "From 5th of May 2025 to 28th of June 2025";
-const TypingSpeed = 100;
+const InternshipDates = "From 5th of May 2025 to 27th of June 2025";
+const TypingSpeed = 50;
 
 /***************** Home Page ******************/ 
 const HOME_PAGE = document.getElementById("home");
@@ -38,6 +38,7 @@ function animateBubbles(){
     textLeft.textContent = "";
     textRight.textContent = "";
 
+
     // First bubble
     setTimeout(()=>{
         bubbleLeft.classList.add("seen");
@@ -47,12 +48,12 @@ function animateBubbles(){
                 bubbleRight.classList.add("seen");
                 typeText(InternshipDates,textRight,()=>{
                     // Dispearance for bubbles
-                    setTimeout(()=>{
-                        bubbleLeft.classList.remove("seen");
-                        bubbleRight.classList.remove("seen");
-                        // start this loop again
-                        setTimeout(animateBubbles, 2000);
-                    },5000);
+                    // setTimeout(()=>{
+                    //     bubbleLeft.classList.remove("seen");
+                    //     bubbleRight.classList.remove("seen");
+                    //     // start this loop again
+                    //     setTimeout(animateBubbles, 2000);
+                    // },5000);
                 });
             },1000)
         });
@@ -89,9 +90,10 @@ function displayNextPhrase(tabContent, elementP, Bubble) {
         elementP.textContent = "";
         typeText(tabContent[currentPhrase], elementP, () => {
             currentPhrase++;
-            setTimeout(displayNextPhrase(tabContent, elementP, Bubble), 5000); 
+            setTimeout(displayNextPhrase(tabContent, elementP, Bubble), 7000); 
         });
-    } else {
+    } 
+    else {
         setTimeout(() => {
             currentPhrase = 0;
             Bubble.classList.remove("seen");
@@ -117,7 +119,7 @@ const FR_Bubble = document.querySelector('.fr-dialog');
 const FR_Content = document.getElementById("fr-dialog-content");
 const FR_Texts = [
     "Hello! Moi c'est Jenny.",
-    "Je suis actuellement à la recherche d'un stage comme Developpeuse Web du 5/05/2025 au 27/06/2025. Pour consulter mon profil en Français,"
+    "Je suis actuellement à la recherche d'un stage comme Developpeuse Web du 5/05/2025 au 27/06/2025."
 ];
 
 function displayText(){
