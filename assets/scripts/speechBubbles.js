@@ -132,6 +132,8 @@ function displayText(){
 }
 window.addEventListener("load",displayText());
 
+
+
 // Test function 
 //  I want to diplay the text progressively
 
