@@ -51,7 +51,7 @@ nav {
 
 .navbar {
     width: fit-content;
-    height: 90%;
+    height: fit-content;
     border-radius: 0 20px 20px 0;
     padding: 10px;
     margin-right: 10%;

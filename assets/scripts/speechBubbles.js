@@ -11,7 +11,7 @@ const bubbleLeft = document.getElementById("bubble-left");
 // console.log(bubbleLeft);
 
 // Right bubble
-const textRight = document.getElementById("text-rigth");
+const textRight = document.getElementById("text-right");
 const bubbleRight = document.getElementById("bubble-right");
 // console.log(bubbleRight);
 

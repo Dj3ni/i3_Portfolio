@@ -7,19 +7,34 @@
     src: url("../fonts/poppins/Poppins-Light.ttf");
 }
 
+@font-face {
+    font-family: "Futura Std Light";
+    src: url("../fonts/futura/FuturaStd-Light.woff");
+}
+
+
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: Futura Std Light, Poppins;
     display: grid;
     grid-template-columns: 10% 90%;
     grid-template-rows: 50px 60vh 30vh;
-    grid-template-areas: ". navbar"
+    grid-template-areas: "side navbar"
                         "side intro"
                         "side cards";
+    background-color:#f7f7f5;
+    color: #091018;
 }
 
-.navbar {
+.navbar-container{
     grid-area: side;
+    display: flex;
+    align-items:center ;
+}
+.navbar {
+    position: sticky;
+    top:0;
 }
 
 .burger-navbar {
@@ -67,25 +82,31 @@ body {
 
 .speech-bubble-left {
     position: relative;
-    width: 200px;
+    width: 180px;
     background-color: rgba(217, 217, 217, 0.5);
     padding: 15px;
     border-radius: 20px;
     text-align: center;
-    height: 75px;
+    height: 70px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .speech-bubble-right {
     position: relative;
-    width: 200px;
+    width: 180px;
     background-color: rgba(217, 217, 217, 0.5);
     padding: 15px;
     border-radius: 20px;
     text-align: center;
-    height: 75px;
+    height: 70px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+
+#text-left, #text-right {
+    margin: 0 auto;
+}
+
+
 
 /* Triangle */
 
@@ -113,6 +134,8 @@ body {
     border-color: transparent rgba(217, 217, 217,0.5) transparent transparent;
 }
 
+
+
 /* Animation bubbles */
 
 .speech-bubble-left, .speech-bubble-right {
@@ -126,7 +149,7 @@ body {
 }
 
 .intro {
-    margin-top: 20px;
+    margin:15px 10% 0 0;
     grid-area: intro;
     font-size: 14px;
     text-align: center;
@@ -137,8 +160,14 @@ body {
     font-family: Poppins;
 }
 
+.intro p{
+    max-width: 80%;
+}
+
+
 h1 {
     font-family: Dancing Script;
+    font-size: xxx-large;
 }
 
 /*********** Cards  ***********/
@@ -153,8 +182,8 @@ h1 {
 }
 
 .card {
-    width: 20%;
-    height: 90%;
+    width: 200px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
     padding: 5px;
@@ -163,15 +192,17 @@ h1 {
     position: absolute;
     cursor: pointer;
     background-color: white;
-    transition: transform 0.5s, z-index 0.5s;
+    transition: transform 0.9s ease-in-out, z-index 0.5s;
 }
 
 .card a {
     text-decoration: none;
+    color: #091018;
 }
 
 .card a:visited{
-    color:black;
+    /* color:black; */
+    color: #091018;
 }
 
 /* cards hover */
