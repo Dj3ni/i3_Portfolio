@@ -9,14 +9,21 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 50px 10vh 75vh 100px;
-    grid-template-areas: "side navbar"
+    grid-template-rows: 50px 10vh 85vh;
+    grid-template-areas: ". navbar"
                         "side contact"
-                        ". contact"
-                        "footer footer";
+                        "side contact";
+    background-color:#f7f7f5;
+    color: #091018;
+}
+.navbar-container{
+    grid-area: side;
+    display: flex;
+    align-items:flex-start;
 }
 .navbar {
-    grid-area: side;
+    position: sticky;
+    top:0;
 }
 
 .burger-navbar {
@@ -26,7 +33,7 @@ body {
 
 .visible {
     display: block;
-    z-index: 2;
+    z-index: 10;
 }
 
 .pdf {
@@ -112,7 +119,7 @@ body {
 
 .form-group input,textarea {
     /* grid-area: input; */
-    padding: 2px;
+    padding: px;
     border-radius: 15px;
     margin: 5px;
     background-color: rgb(247, 247, 245, 0.5);
@@ -120,12 +127,13 @@ body {
 
 .send button {
     /* grid-area: button; */
-    width: 50px;
+    width: 100px;
+    padding: 10px;
     font-family: Dancing Script;
+    font-size: large;
     margin: 20px;
     justify-self: flex-start;
     border-radius: 20px;
-
 }
 .send div {
     /* grid-area: img; */
