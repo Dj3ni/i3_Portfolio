@@ -12,10 +12,18 @@ body {
     grid-template-areas: ". navbar"
                         "side portfolio";
     font-family: Share Tech Mono;
+    background-color:#f7f7f5;
+    color: #091018;
 }
 
-.navbar {
+.navbar-container{
     grid-area: side;
+    display: flex;
+    align-items:flex-start ;
+}
+.navbar {
+    position: sticky;
+    top:0;
 }
 
 .burger-navbar {

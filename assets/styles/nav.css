@@ -18,6 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    font-family: Futura Std;
 }
 
 .navlinks {

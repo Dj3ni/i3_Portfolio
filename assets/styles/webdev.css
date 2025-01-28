@@ -17,6 +17,8 @@ body {
                         "side intro"
                         "side snake";
     font-family: Share Tech Mono;
+    background-color:#f7f7f5;
+    color: #091018;
 }
 
 .navbar {

@@ -16,6 +16,8 @@ body {
     grid-template-rows: 50px 90vh;
     grid-template-areas: ". navbar"
                         "side mountains";
+    background-color:#f7f7f5;
+    color: #091018;
 }
 
 .navbar {
@@ -42,6 +44,7 @@ body {
 
 .mountains {
     grid-area: mountains;
+    /* margin-right: 10%; */
     /* border:2px solid; */
     display: grid;
     grid-template-columns: 5% 22% 22% 22% 22% 22%;
@@ -68,6 +71,7 @@ body {
 
 .title {
     grid-area: title;
+    margin-right: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
