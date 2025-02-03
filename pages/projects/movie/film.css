@@ -1,0 +1,29 @@
+body{
+    margin:0;
+}
+
+@font-face{
+    font-family: "Las locuras";
+    src: url("assets/fonts/Las\ locuras\ del\ emperador.TTF") format(TTF)
+}
+
+/* Header */
+
+header{
+    background-color: #231942;
+    display: block;
+    margin: 0;
+    padding: 20px;
+    color: #be95c4;
+    
+}
+
+h1,h2,h3{
+    font-family: "Las locuras";
+}
+
+
+main{
+    padding: 30px;
+    background:#9f86c0;
+}
