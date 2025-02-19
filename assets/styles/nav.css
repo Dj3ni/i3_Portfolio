@@ -4,6 +4,10 @@
     font-weight: 300; 
     src: url('../../assets/fonts/futura/FuturaStdCondensed.otf') format('otf');
     }
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-Light.ttf");
+}
 
 nav {
     background-color: #d9d9d9;
@@ -18,7 +22,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    font-family: Futura Std;
+    font-family: Futura Std, Poppins;
 }
 
 .navlinks {
@@ -32,13 +36,13 @@ nav {
     margin: 5px;
     text-decoration: none;
     color: #000;
-    font-family: Futura Std Light;
+    font-family: Futura Std, Poppins;
 }
 
 .quit {
     margin: 5px;
     color: #000;
-    font-family: Futura Std Light;
+    font-family: Futura Std, Poppins;
     cursor: pointer;
     float: right;
 }
