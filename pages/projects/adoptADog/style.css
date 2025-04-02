@@ -1,0 +1,231 @@
+@font-face{
+    font-family: "Sing Kong";
+    src: url("./assets/fonts/Singkong.otf");
+}
+
+body{
+    margin: 0;
+}
+
+/* Header */
+
+.logo{
+    height: 128px;
+    width: 128px;
+    display:inline-flex;
+    padding: 15px;
+    margin-right: 15px;  
+}
+
+nav li{
+    display:inline-flex;
+    padding: 5px;
+    margin-left: 15px;    
+    font-family: "Bree Serif";
+}
+
+header{
+    background-color:#ffeeda;
+    padding-bottom: 5px;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a{
+    color:black;
+    font-weight: bolder;
+}
+
+a:hover {
+    color:orange;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Main */
+
+main{
+    background-image: url("./assets/images/background-pattern-compressed.png");
+    background-color: #e6b78b;
+    margin: 0px 0px;
+    padding-top: 15px;
+
+}
+
+h1 {
+    font-family: "Sing Kong";
+    padding: 30px;    
+}
+
+article{   
+    background-color: aliceblue;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin: 0 auto;
+    width: 80%;
+}
+
+article h1{
+    margin-left: 10%;
+}
+
+
+/* sections */
+
+.sections{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;    
+    margin: auto;
+    padding-bottom: 20%;
+}
+
+section{
+    display:flex wrap;
+    align-items: center;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.46);
+    width: 500px;
+    height: 400px;    
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 15px;    
+}
+
+section:hover{
+    box-shadow: none;
+}
+
+section h1{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.description{
+    display: flex;    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+/* images section*/
+
+.dogs{
+    position: relative;
+    max-width: 100%;
+    max-height: 65%;
+    overflow: hidden;
+    margin: 0 auto;
+    object-fit: none;
+    object-position: center;
+}
+
+#dog1{
+    /* position:relative; */
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #fed7ae;
+    
+}
+
+#dog2{
+    /* position:relative; */
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #bbd5fa;
+}
+#dog3{
+    /* position:relative; */
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #feb6b7;
+}
+
+/* Footer */
+
+footer{
+    background-color: #030917;    
+    font-family: "Poppins";
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+footer h4{
+    color: white;
+    text-align: center;    
+}
+
+footer p,address,tel{
+    color: beige;
+    
+}
+
+footer li{
+    color: beige;
+    list-style: none;
+    margin: 0;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer li:hover{
+    color:gainsboro;
+    font-size: large;
+}
+
+/* colonnes footer */
+
+.logobot img{
+    height: 128px;
+    width: 140px;    
+    padding: 15px;    
+    align-self: center;    
+}
+.logobot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 20%;
+    margin-right: 5px;
+}
+
+.social{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.social img{
+    height: 80px;
+    width: 80px;    
+    padding: 0px;
+    margin-right: 0px;   
+}
+
+.menu, .contact, .social {
+    align-items: left;
+    padding: 1rem;
+}
+
+/* Copyright */
+
+.copyright{    
+    background-color: #030917;
+    color: beige;    
+    font-family: "Poppins";    
+    text-align: center;
+    border-top: 1px solid beige;
+    /* border-top-color: beige;     */
+}

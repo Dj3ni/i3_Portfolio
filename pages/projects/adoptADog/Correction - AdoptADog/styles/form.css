@@ -1,0 +1,84 @@
+main form input:not(input[type=radio], input[type=checkbox]), form button, form select{
+    border-radius: 12px;
+    border: 1px ridge rgba(46, 34, 3,0.5);
+    min-height: 24px;
+    margin : 5px;
+    padding: 0px 12px;
+    font-size: 0.8rem;
+    max-width: 80%;
+    min-width: 120px;
+}
+
+main form input[type=checkbox]{
+    margin: 5px 5px 5px 15%;
+    height: 24px;
+    padding: 0px 12px;
+    font-size: 0.8rem;
+}
+
+main form option{
+    font-size: 1.2em;
+}
+
+main form label{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    min-width: 40%;
+}
+
+main form legend{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+main form fieldset{
+    border: 1px inset rgba(46, 34, 3,0.25);
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(46, 34, 3,0.25);
+    background-color: #fff2e3;
+}
+
+main form fieldset .inline{
+    display: inline-block;
+}
+
+main form label.label-long{
+    width : 75%;
+    max-height: 6em;
+    overflow: auto;
+}
+
+main form.big-form{
+    width : 60%;
+}
+
+main form.big-form button{
+    min-width : 30%;
+    max-width: 40%;
+}
+main form{
+    font-size: 1.5em;
+    width: 30%;
+    margin: 0 auto 64px;
+    padding : 32px;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: 0px 16px 32px rgba(46, 34, 3,0.25) ;
+    text-align: center;
+}
+
+form a{
+    font-size:0.6em;
+}
+
+form div{
+    padding : 15px 0;
+}
+
+.big-form>div{
+    min-width: 200px;
+    max-width: 75%;
+    margin: 0 auto;
+}

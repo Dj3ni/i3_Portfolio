@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a dog!</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/assets/images/Logo-transparent.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <div>Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>About us</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./add.html">
+                            <div>Pet adoption</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>Donate</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <div>Login</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>Contact</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <hr class="clear">
+    </header>
+    <main>
+        <section class="selection container">
+            <h1>Vite! Trouvons lui une famille!</h1>
+            <form method="post" enctype="multipart/form-data" action="" name="add" class="big-form">
+                <div>
+                    <label class="left" for="name">Nom du chien :</label>
+                    <input class="right" required id="name" type="text" name="name">
+                </div>
+                <hr class="clear">
+                <div>
+                    <label class="left" for="photo">Une photo? </label>
+                    <input class="right" id="photo" type="file" name="photo" accept="image/png, image/jpg, image/jpeg, image/bmp, image/gif">
+                </div>
+                <hr class="clear">
+                <div>
+                    <label class="left" for="date">Date d'arrivée :</label>
+                    <input class="right" required id="date" type="date" name="date">
+                </div>
+                <hr class="clear">
+                <div>
+                    <fieldset>
+                        <legend>Sex :</legend>
+                        <div class="radio-grp">
+                            <div class="inline">
+                                <input required id="gender-M" type="radio" name="gender">
+                                <label for="gender-M">Male</label>
+                            </div>
+                            <div class="inline">
+                                <input required id="gender-F" type="radio" name="gender">
+                                <label for="gender-F">Femelle</label>
+                            </div>
+                            <div class="inline">
+                                <input required id="gender-O" type="radio" name="gender">
+                                <label for="gender-O">Inconnu</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <hr class="clear">
+                <div>
+                    <label class="left" for="race">Race :</label>
+                    <select class="right" name="race" id="race">
+                        <option>Quelle race?</option>
+                        <optgroup label="Petit">
+                            <option value="chihuahua">Chihuahua</option>
+                            <option value="french">Bulldog Français</option>
+                            <option value="Carlin">Carlin</option>
+                        </optgroup>
+                        <optgroup label="Moyen">
+                            <option value="malin">Mallinois</option>
+                            <option value="allemand">Berger allemand</option>
+                        </optgroup>
+                        <optgroup label="Grand">
+                            <option value="danois">Grand danois</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <hr class="clear">
+                <div>
+                    <label class="left" for="color">Couleur de fond :</label>
+                    <input class="right" required id="color" type="color" name="color">
+                </div>
+                <hr class="clear">
+                <div>
+                    <input class="left" required id="consent" type="checkbox" name="consent">
+                    <label class="right label-long" for="consent">En cochant cette case, je conscent de livrer le chien au centre d'adoption le plus proche dans le but de lui trouver un nouveau foyer.</label>
+                </div>
+                <hr class="clear">
+                <div>
+                    <button type="submit">Enregistrer le chien</button>
+                    <button type="reset">Revenir à zéro</button>
+                    <button>Sauver le brouillon</button>
+                </div>
+                <hr class="clear">
+            </form>
+            <hr class="clear">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-head container">
+            <div class="left-footer left">
+                <div class="logo">
+                    <img src="/assets/images/Logo-White.png" alt="">
+                </div>
+                <div class="slogan">
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam laudantium.</h3>
+                </div>
+            </div>
+            <div class="center-footer left">
+                <nav class="left">
+                    <h2>Explore</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <div>About Us</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>Adopt</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>Blog</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="right">
+                    <h2>Contact us</h2>
+                    <p>20 Long Beach, United States.</p>
+                    <p>+ (123 789654 564)</p>
+                    <p>info@example.com</p>
+                </div>
+            </div>
+            <div class="right-footer right">
+                <a class="left" href=""><div class="social fb"></div></a>
+                <a class="left" href=""><div class="social ig"></div></a>
+                <a class="left" href=""><div class="social yt"></div></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-foot">
+            <p>
+                Copyrigth (c) - Samuel Legrain - Bruxelles Formation 2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

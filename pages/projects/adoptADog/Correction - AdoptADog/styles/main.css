@@ -1,0 +1,224 @@
+@font-face {
+    font-family: SingKong;
+    src: url("/assets/fonts/Singkong.otf");
+}
+
+body{
+    margin : 0;
+    padding : 0;
+}
+
+html{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul{
+    padding : 0;
+}
+
+nav li{
+    list-style: none;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.left{
+    float : left;
+}
+
+.right{
+    float : right;
+}
+
+.clear{
+    opacity: 0;
+    clear: both;
+    margin : 0;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.selection{
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    width : 80%;
+}
+
+.selection>h1{
+    padding: 32px;
+    font-family: SingKong;
+    font-weight: 100;
+    font-size: 2.25em;
+}
+
+.cards{
+    padding: 0px 16px 32px;
+    min-width : 276px;
+    max-width : 828px;
+    margin: 0 auto;
+}
+.card{
+    width: 256px;
+    height: 256px;
+    border-radius: 20px;
+    margin : 32px 10px;
+    box-shadow: 0px 16px 32px rgba(46, 34, 3,0.25) ;
+    overflow: hidden;
+}
+
+.card-pic{
+    height: 65%;
+    overflow: hidden;
+}
+
+.card-pic img{
+    width: 100%;
+}
+
+.card-pic div{
+    max-width: 80%;
+    margin: 5% auto;
+}
+
+.color1{
+    background-color: #fed7ae;
+}
+.color2{
+    background-color: #bbd5f8;
+}
+.color3{
+    background-color: #feb6b7;
+}
+
+.card-content{
+    background-color: white;
+    padding : 16px;
+}
+
+.card-content>*{
+    margin : 0;
+    padding-top: 5px;
+}
+
+.card-content{
+    font-size: 0.55em;
+}
+.card-content p{
+    color: #a8a39b;
+}
+
+header{
+    background-color: #ffefd8;
+}
+
+header .logo{
+    float: left;
+}
+
+.logo img{
+    width: 128px;
+}
+
+header nav{
+    float: right;
+}
+
+header nav li{
+    display: inline-block;
+    margin : 24px 5px;
+    padding: 5px;
+}
+
+header nav a{
+    font-family: 'Bree Serif', serif;
+}
+
+header nav a, h1, h2, h3, p{
+    color: rgb(46, 34, 3);
+    font-weight: bold;
+}
+
+body{
+    background: url("/assets/images/background-pattern-compressed.png");
+}
+
+footer, body{
+    background-color: #020a17;
+}
+
+footer p, footer h1, footer h2, footer h3, footer a{
+    color:white;
+    font-size: 0.8em;
+}
+
+footer p, footer a, footer h3{
+    color: #a8a39b;
+}
+
+.left-footer, .center-footer{
+    width: 33%;
+    margin-right: 32px;
+}
+
+footer hr{
+    clear: both;
+}
+
+.footer-foot{
+    text-align: center;
+}
+
+.social{
+    width : 64px;
+    height: 64px;
+}
+.social.fb{
+    background: url("/assets/images/facebook-w.png");
+    background-size: cover;
+}
+.social.fb:hover{
+    background: url("/assets/images/facebook-o.png");
+    background-size: cover;
+}
+.social.ig{
+    background: url("/assets/images/instagram-w.png");
+    background-size: cover;
+}
+.social.ig:hover{
+    background: url("/assets/images/instagram-o.png");
+    background-size: cover;
+}
+.social.yt{
+    background: url("/assets/images/youtube-w.png");
+    background-size: cover;
+}
+.social.yt:hover{
+    background: url("/assets/images/youtube-o.png");
+    background-size: cover;
+}
+
+header li:first-of-type a{
+    color:orange;
+}
+
+header li a:hover{
+    color:orange;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.card:hover{
+    box-shadow: 0px 10px 16px rgba(46, 34, 3,0.5) ;
+    margin : 36px 10px 28px;
+    transition: all 0.2s;
+}
