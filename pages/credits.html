@@ -4,106 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credits</title>
-    <link rel="stylesheet" href="../assets/styles/credits.css">
+    <link rel="stylesheet" href="/assets/styles/credits.css">
+    <link rel="stylesheet" href="/assets/styles/nav.css">
+    <script src="/assets/scripts/cv.js" defer></script>
+    <script src="/assets/scripts/hamburger.js" defer></script>
+
 
 </head>
 <body>
-    <h1>Because without them the world would be ugly</h1>
-    <h2>Big thanks to: </h4>
 
-        <div> 
-            <h3>Flaticon's artists</h4>
-            <h4>Navbar icons</h4>
-            <div class = "icons">
-                <img src="/assets/icons/github.png" alt="github icon" >
-                <a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect"> Pixel perfect </a> from <a href="https://www.flaticon.com/fr/" title="Flaticon" target="_blank">www.flaticon.com'</a></div>
+
+    <nav class="burger-navbar">
+        <div class="navlinks">
+            <a href="/pages/en/about.html">About</a>
+            <a href="/pages/en/studies.html">Studies</a>
+            <a href="/pages/en/work.html">Experience</a>
+            <a href="/pages/en/webdev.html">Webdev</a>
+            <a href="/pages/en/portfolio.html">Portfolio</a>
+            <a href="/pages/en/contactMe.html">Contact</a>
+            <span class="quit">&times;</span>
+        </div>       
+    </nav>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <div id = "burger" class = "icon"><a href=""><img src="../../assets/icons/burger-bar.png" alt="burger"></a></div>
+                <div class = "icon"><a href="./homePage.html"><img src="../../assets/icons/domicile.png" alt="home"></a></div>
+                <div class = "icon"><a href=""><img src="../../assets/icons/traduction.png" alt="languages"></a></div>
             </div>
+            <div class="icons">
+                <div class = "icon">
+                    <a href="https://github.com/Dj3ni">
+                        <img src="../../assets/icons/github.png" alt="github">
+                    </a>
+                </div>
+                <div class = "icon">
+                    <a href="https://www.linkedin.com/in/jenny-fernandez-garcia/">
+                        <img src="../../assets/icons/linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+                <div class = "icon">
+                    <a href="">
+                        <img id="cv" src="../../assets/icons/cv.png" alt="cv">
+                    </a>
+                </div>
+                <div class = "icon">
+                    <a href="./contactMe.html">
+                        <img src="../../assets/icons/email.png" alt="contact">
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
     
-            <div class ="icons">
-                <img src="/assets/icons/linkedin.png" alt="linkedin icon">
-                <a href="https://www.flaticon.com/fr/icones-gratuites/linkedin" title="linkedin icônes" target="_blank">Linkedin icônes créées par Enamo Studios - Flaticon</a>
-            </div>
-            <div class ="icons">
-                <img src="/assets/icons/cv.png" alt="cv icon">
-                <a href="https://www.flaticon.com/fr/icones-gratuites/cv-et-cv" title="cv et cv icônes" target="_blank">Cv et cv icônes créées par Freepik - Flaticon</a>
-            </div>
-            <div class ="icons">
-                <img src="/assets/icons/email.png" alt="email icon">
-                <a href="https://www.flaticon.com/fr/icones-gratuites/email" title="email icônes" target="_blank">Email icônes créées par Tru3 Art - Flaticon</a>
-            </div>
-            <div class ="icons">
-                <img src="/assets/icons/traduction.png" alt="traduction icon">
-                <a href="https://www.flaticon.com/fr/icones-gratuites/traduction" title="traduction icônes" target="_blank">Traduction icônes créées par Freepik - Flaticon</a>
-            </div>
-            <div class ="icons">
-                <img src="/assets/icons/domicile.png" alt="">
-                <a href="https://www.flaticon.com/fr/icones-gratuites/bouton-daccueil" title="bouton d'accueil icônes">Bouton d'accueil icônes créées par rukanicon - Flaticon</a>
-            </div>
-        </div>
-        <div>
-            <h4>Webdev icons</h4>
-            <div class ="icons">
-                <img src="/assets/images/skills/snakeHead3.png" alt="snakeHead">
-                <a href="https://www.flaticon.com/fr/icones-gratuites/serpent" title="serpent icônes" target="_blank">Serpent icônes créées par kerismaker - Flaticon</a>
-            </div>
-            <div class ="icons">
-                <img src="/assets/images/skills/snake rattle.png" alt="rattle icon">
-            </div>
-            <div class ="icons">
-                <img src="/assets/images/skills/html5.png" alt="html icon">
-            </div>
-            <div class ="icons">
-                <img src="/assets/images/skills/css3-01_icon-icons.com_50918.png" alt="css icon">
-            </div>
-            <div class ="icons">
-                <img src="/assets/images/skills/java-script.png" alt="javascript icon">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            
-        </div>
-        <div>
-            <h4>Work and Studies Icons</h4>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
-            <div class ="icons">
-                <img src="" alt="">
-            </div>
+    <embed class = "pdf" src="../../assets/CV.pdf" type="application/pdf" width="800" height="500">
 
-        </div>
-            
-            
-            <a href="https://www.flaticon.com/fr/icones-gratuites/architecture" title="architecture icônes" target="_blank">Architecture icônes créées par Rian Maulana - Flaticon</a>
-            
-            <a href="https://www.flaticon.com/fr/icones-gratuites/python" title="python icônes" target="_blank">Python icônes créées par Nadiinko - Flaticon</a>
-            
+    <div class="content">
+            <h1>Because without them the world would be ugly</h1>
+            <h2>Big thanks to: </h2>
         
+                <div>
+                    <h3>Libellud's artists</h3>
+                    <div>
+        
+                    </div>
+                </div>
+        
+                <div>
+                    <h3>Flaticon's artists and co</h4>
+                    <div>
+                        <h4>Navbar icons</h4>
+                        <div class = "icons2">
+                            <img src="/assets/icons/github.png" alt="github icon" >
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/github" title="github icônes" target="_blank">Github icônes créées par Pixel perfect - Flaticon</a>
+                        </div>            
+                        <div class ="icons2">
+                            <img src="/assets/icons/linkedin.png" alt="linkedin icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/linkedin" title="linkedin icônes" target="_blank">Linkedin icônes créées par Enamo Studios - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/icons/cv.png" alt="cv icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/cv-et-cv" title="cv et cv icônes" target="_blank">Cv et cv icônes créées par Freepik - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/icons/email.png" alt="email icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/email" title="email icônes" target="_blank">Email icônes créées par Tru3 Art - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/icons/traduction.png" alt="traduction icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/traduction" title="traduction icônes" target="_blank">Traduction icônes créées par Freepik - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/icons/domicile.png" alt="home icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/bouton-daccueil" title="bouton d'accueil icônes">Bouton d'accueil icônes créées par rukanicon - Flaticon</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Webdev icons2</h4>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/snakeHead3.png" alt="snakeHead">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/serpent" title="serpent icônes" target="_blank">Serpent icônes créées par kerismaker - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/html5.png" alt="html icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/html5" title="html5 icônes">Html5 icônes créées par Picons2 - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/css3-01_icon-icons.com_50918.png" alt="css icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/css-3" title="css 3 icônes">Css 3 icônes créées par Freepik - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/java-script.png" alt="javascript icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/javascript" title="javascript icônes">Javascript icônes créées par edt.im - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/social.png" alt="drupal icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/drupal" title="drupal icônes">Drupal icônes créées par pocike - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/json-file.png" alt="json icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/fichier-json" title="fichier json icônes">Fichier json icônes créées par Smashicons2 - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/angularjs.png" alt="angularjs icon">
+                            <a href="https://www.flaticon.com/free-icons2/angularjs" title="angularjs icons2">Angularjs icons2 created by iconizerapp - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/react.png" alt="react icon">
+                            <a href="https://www.flaticon.com/free-icons2/react" title="react icons2">React icons2 created by Freepik - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/node_icon_196185.png" alt="node icon">
+                            <a href="https://www.flaticon.com/free-icons2/nodejs" title="nodejs icons2">Nodejs icons2 created by Freepik - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/dot_net_icon_138665.png" alt="dotnet icon">
+                            <a href="https://logosear.ch/logos/dotnet/index.html" target="_blank">.Net </a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/csharp_logo_icon_247249.png" alt="c sharp icon">
+                            <a href="https://www.svgrepo.com/svg/305920/csharp">C#logo</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/symfony_original_wordmark_logo_icon_146328.png" alt="symfony icon">
+                            <a href="https://symfony.com/logo" target="_blank">Official symfony logo</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/web.png" alt="php icon">
+                            <a href="https://www.flaticon.com/free-icons2/php" title="php icons2" target="_blank">Php icons2 created by pocike - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/python.png" alt="python icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/python" title="python icônes" target="_blank">Python icônes créées par Nadiinko - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/phpmyadmin_logo_icon_168906.png" alt="php my admin logo">
+                            <a href="https://uxwing.com/phpmyadmin-icon/">PhpMyAdmin</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/serveur-sql.png" alt="sql icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/sql" title="sql icônes">Sql icônes créées par juicy_fish - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/skills/workflow.png" alt="uml icon">
+                            <a href="https://www.flaticon.com/fr/icones-gratuites/architecture" title="architecture icônes" target="_blank">Architecture icônes créées par Rian Maulana - Flaticon</a>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <h4>Work and Studies icons</h4>
+                        <div class ="icons2">
+                            <img src="/assets/images/xp/mountain.png" alt="mountain icon">
+                            <a href="https://www.flaticon.com/free-icons2/mountain" title="mountain icons2">Mountain icons2 created by Freepik - Flaticon</a>
+                        </div>
+                        <div class ="icons2">
+                            <img src="/assets/images/xp/trekking.png" alt="trek icon"><a href="https://www.flaticon.com/free-icons2/hiking" title="hiking icons2">Hiking icons created by monkik - Flaticon</a>
+                        </div>
+                    </div>
+                </div>   
+    </div> 
+    
         
 </body>
 </html>

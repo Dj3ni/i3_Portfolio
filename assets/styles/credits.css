@@ -1,6 +1,67 @@
 
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
 
-.icons img{
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-Light.ttf");
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 50px 90vh;
+    grid-template-areas: ". navbar"
+                        "side content";
+    background-color:#f7f7f5;
+    color: #091018;
+}
+
+.navbar-container{
+    grid-area: side;
+    display: flex;
+    align-items:flex-start ;
+}
+.navbar {
+    position: sticky;
+    top:0;
+}
+
+.burger-navbar {
+    /* display: none; */
+    grid-area: navbar;
+    position: sticky;
+    top:0;
+}
+
+.visible {
+    display: block;
+    z-index: 100;
+}
+
+.pdf {
+    width: 80%;
+    height: 900px;
+    position: fixed;
+    justify-self: center;
+    top: 55px;
+}
+
+.icons2 img{
     width: 20px;
     height: 20px;
+}
+
+.content{
+    grid-area: content;
+    font-family: Poppins;
+}
+
+h1,h2,h3 {
+    font-family: Dancing Script;
+    text-align: center;
 }
