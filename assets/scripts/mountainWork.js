@@ -48,14 +48,12 @@ dates.forEach(date => {
             moveHiker("bottom2","center");
             displayModal(
                 date.textContent,
-                "Boardgames Freelance",
+                "Freelance Boardgames Animator",
                 "Dés-mentiel - Belgium", 
                 "Boardgames events - Escapes Games - Teambuildings");
         }
-        
     })
 });
-
 
 function moveHiker(gridArea, justifySelf, alignSelf = "center"){
     hiker.style.gridArea = gridArea;

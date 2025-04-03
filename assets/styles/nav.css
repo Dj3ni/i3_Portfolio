@@ -111,3 +111,11 @@ nav {
     display: block;
     z-index: 1000;
 }
+
+a:visited {
+    color: black;
+}
+
+a{
+    color:black;
+}
