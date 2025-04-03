@@ -21,22 +21,6 @@ body {
     color: #091018;
 }
 
-.navbar-container{
-    grid-area: side;
-    display: flex;
-    align-items:flex-start ;
-}
-.navbar {
-    position: sticky;
-    top:0;
-}
-
-.burger-navbar {
-    display: none;
-    grid-area: navbar;
-    position: sticky;
-    top:0;
-}
 
 .visible {
     display: block;
