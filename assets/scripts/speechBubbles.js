@@ -93,13 +93,13 @@ function displayNextPhrase(tabContent, elementP, Bubble) {
             setTimeout(displayNextPhrase(tabContent, elementP, Bubble), 7000); 
         });
     } 
-    else {
-        setTimeout(() => {
-            currentPhrase = 0;
-            Bubble.classList.remove("seen");
-            setTimeout(bubblePirate, 3000);
-        }, 4000);
-    }
+    // else {
+    //     setTimeout(() => {
+    //         currentPhrase = 0;
+    //         Bubble.classList.remove("seen");
+    //         setTimeout(bubblePirate, 3000);
+    //     }, 4000);
+    // }
 }
 
 window.addEventListener("load", bubblePirate);
