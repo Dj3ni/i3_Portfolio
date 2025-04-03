@@ -63,7 +63,7 @@ dates.forEach(date => {
                 date.textContent,
                 "CESS - Grande Distinction",
                 "Institut des Dames de Marie - Woluwé-Saint-Lambert", 
-                "Sciences sociales - Latin - Langues");
+                "Sciences sociales - Latin - Langues <br> Social sciences - Latin - Languages");
         }
         else if(date.classList == "date top2"){
             moveHiker("top2", "end");
@@ -71,7 +71,7 @@ dates.forEach(date => {
                 date.textContent,
                 "Certificat Gestion de Base",
                 "Bruxelles Formation - Bruxelles",
-                "Gestion de Base"
+                "Gestion de Base <br> Management basis"
                 );
 
         }
@@ -81,7 +81,7 @@ dates.forEach(date => {
                 date.textContent,
                 "",
                 "Institut Libre Marie Haps - Ixelles",
-                "Logopédie"
+                "Logopédie <br> Speech Therapy"
             )
         }
         else if(date.classList == "date bottom2"){
@@ -138,7 +138,7 @@ function displayModal(date, certificate = "", location, description){
     pLocation.style.fontFamily = "Poppins";
     pLocation.style.textAlign = "center";
 
-    pDescription.textContent = description;
+    pDescription.innerHTML = description;
     pDescription.style.fontStyle = "italic";
     pDescription.style.fontFamily = "Poppins";
     pDescription.style.textAlign = "center";
