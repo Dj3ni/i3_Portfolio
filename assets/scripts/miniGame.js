@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Image de la couche à gratter
         const scratchImage = new Image();
-        scratchImage.src = "/assets/images/games/police.png";
+        scratchImage.src = card.dataset.image
+        // scratchImage.src = "/assets/images/games/police.png";
 
         scratchImage.onload = function () {
             context.drawImage(scratchImage, 0, 0, width, height);

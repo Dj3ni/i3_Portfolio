@@ -12,28 +12,12 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 50px 50% 40%;
+    grid-template-rows: 50px 120vh 40vh;
     grid-template-areas: ".navbar"
                         "side intro"
                         "side intro";
 }
 
-.navbar-container{
-    grid-area: side;
-    display: flex;
-    align-items:flex-start ;
-}
-.navbar {
-    position: sticky;
-    top:0;
-}
-
-.burger-navbar {
-    /* display: none; */
-    grid-area: navbar;
-    position: sticky;
-    top:0;
-}
 
 .pdf {
     width: 80%;
@@ -43,6 +27,10 @@ body {
     top: 55px;
 }
 
+ /* .visible {
+    display: block;
+    z-index: 100;
+} */
 
 main {
     grid-area: intro;
