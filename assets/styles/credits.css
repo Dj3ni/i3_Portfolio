@@ -14,7 +14,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 50px 90vh;
+    grid-template-rows: 50px 200vh;
     grid-template-areas: ". navbar"
                         "side content";
     background-color:#f7f7f5;
@@ -32,7 +32,7 @@ body {
 }
 
 .burger-navbar {
-    /* display: none; */
+    display: none;
     grid-area: navbar;
     position: sticky;
     top:0;
@@ -51,17 +51,28 @@ body {
     top: 55px;
 }
 
-.icons2 img{
-    width: 20px;
-    height: 20px;
-}
-
 .content{
     grid-area: content;
     font-family: Poppins;
+    padding: 0 0 50px 0;
 }
 
 h1,h2,h3 {
     font-family: Dancing Script;
     text-align: center;
+}
+
+
+.icons2 img{
+    width: 20px;
+    height: 20px;
+}
+
+.pict {
+    display: flex;
+    margin: 5px 0;
+}
+.pict img {
+    width: 40px;
+    height: 60px;
 }

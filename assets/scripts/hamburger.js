@@ -6,6 +6,7 @@ const Quit = document.querySelector(".quit")
 
 Burger.addEventListener("click", function(event){
     event.preventDefault();
+    // console.log("coucou");
     Burger_Menu.classList.toggle("visible");
 })
 
