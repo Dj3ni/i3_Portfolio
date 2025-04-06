@@ -8,7 +8,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 5% 95%;
     grid-template-rows: 50px 10vh 85vh;
     grid-template-areas: ". navbar"
                         "side contact"
@@ -27,14 +27,14 @@ body {
 }
 
 .burger-navbar {
-    display: none;
+    /* display: none; */
     grid-area: navbar;
 }
 
-.visible {
+/* .visible {
     display: block;
     z-index: 10;
-}
+} */
 
 .pdf {
     width: 80%;

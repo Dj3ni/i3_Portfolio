@@ -11,5 +11,6 @@ Burger.addEventListener("click", function(event){
 })
 
 Quit.addEventListener("click", function(){
-    Burger_Menu.classList.remove("visible");
+    console.log("quit");
+    Burger_Menu.classList.toggle("visible");
 })

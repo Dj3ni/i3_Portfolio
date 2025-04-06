@@ -28,13 +28,13 @@ body {
 
 .burger-navbar {
     grid-area: navbar;
-    display: none;
+    /* display: none; */
 }
 
-.visible {
+/* .visible {
     display: block;
     z-index: 2;
-}
+} */
 
 .burger-navbar .navlinks a {
     font-family: Share Tech Mono;

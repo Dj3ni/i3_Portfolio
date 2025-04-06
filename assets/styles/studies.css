@@ -25,14 +25,14 @@ body {
 }
 
 .burger-navbar {
-    display: none;
+    
     grid-area: navbar;
 }
 
-.visible {
+/* .visible {
     display: block;
     z-index: 100;
-}
+} */
 
 .pdf {
     width: 80%;

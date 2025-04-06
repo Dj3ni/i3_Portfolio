@@ -11,13 +11,13 @@ body {
     margin: 0;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-rows: 50px 130vh 40vh;
+    font-family: Poppins;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 50px 200vh 45vh;
     grid-template-areas: ".navbar"
                         "side intro"
                         "side intro";
 }
-
 
 .pdf {
     width: 80%;
@@ -27,7 +27,7 @@ body {
     top: 55px;
 }
 
- /* .visible {
+/* .visible {
     display: block;
     z-index: 100;
 } */
@@ -41,6 +41,7 @@ main {
 
 h1 {
     font-family: Dancing Script;
+    margin-top: 20px;
 }
 
 .intro {
@@ -51,14 +52,20 @@ h1 {
 
 .intro-content{
     display: flex;
+    max-width: 80%;
     /* height: auto; */
     justify-content: space-between ;
     align-items: center;
     padding: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 .intro-content p {
-    padding: 5px;
+    padding: 5px 15px;
+    margin: 10px;
+    text-align: justify;
 }
 .image-container{
     width: 100%;
