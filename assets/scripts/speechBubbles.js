@@ -84,6 +84,7 @@ function bubblePirate(){
     },500)
 }
 
+
 let currentPhrase = 0;
 function displayNextPhrase(tabContent, elementP, Bubble) {
     if (currentPhrase < tabContent.length) {
@@ -123,14 +124,14 @@ const FR_Texts = [
 ];
 
 function displayText(){
-    currentPhrase = 0;
+    // currentPhrase = 0;
     displayNextPhrase(EN_Texts,EN_Content, EN_Bubble);
     setTimeout(()=>{
         currentPhrase = 0;
         displayNextPhrase(FR_Texts, FR_Content, FR_Bubble);
     },5000);
 }
-window.addEventListener("load",displayText());
+window.addEventListener("load",displayText);
 
 
 

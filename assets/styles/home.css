@@ -38,7 +38,8 @@ body {
 }
 
 .burger-navbar {
-    display: none;
+    display: block;
+    z-index: 100;
     grid-area: navbar;
 }
 
@@ -51,9 +52,13 @@ body {
 }
 
 .visible {
+    display: none;
+}
+
+/* .visible {
     display: block;
     z-index: 100;
-}
+} */
 
 
 /*********** Intro  ***********/
