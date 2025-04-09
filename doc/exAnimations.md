@@ -12,6 +12,9 @@ https://graphiste.com/blog/animations-css/
 https://michalsnik.github.io/aos/
 https://www.youtube.com/watch?v=wKkFh6O9A0M
 
+## Pour les div du portfolio:
+https://gsap.com/docs/v3/Plugins/ScrollTrigger/animation
+
 ##transition pages
 
 Ici j'aime l'effet radial clip
