@@ -110,10 +110,10 @@ nav {
     display: none;
 }
 
-/* .visible {
+.pdfVisible {
     display: block;
-    z-index: 1000;
-} */
+    z-index: 100;
+} 
 
 .visible {
     display: none;

@@ -27,10 +27,10 @@ body {
     top: 55px;
 }
 
-/* .visible {
+.pdfVisible {
     display: block;
     z-index: 100;
-} */
+} 
 
 main {
     grid-area: intro;

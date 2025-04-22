@@ -35,10 +35,10 @@ body {
     font-family: Share Tech Mono;
 }
 
-/* .visible {
+.pdfVisible {
     display: block;
     z-index: 100;
-} */
+} 
 
 .pdf {
     width: 80%;

@@ -31,10 +31,10 @@ body {
     /* display: none; */
 }
 
-/* .visible {
+.pdfVisible {
     display: block;
-    z-index: 2;
-} */
+    z-index: 100;
+} 
 
 .burger-navbar .navlinks a {
     font-family: Share Tech Mono;

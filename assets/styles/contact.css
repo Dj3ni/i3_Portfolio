@@ -31,10 +31,10 @@ body {
     grid-area: navbar;
 }
 
-/* .visible {
+.pdfVisible {
     display: block;
-    z-index: 10;
-} */
+    z-index: 100;
+} 
 
 .pdf {
     width: 80%;

@@ -55,10 +55,10 @@ body {
     display: none;
 }
 
-/* .visible {
+.pdfVisible {
     display: block;
     z-index: 100;
-} */
+} 
 
 
 /*********** Intro  ***********/

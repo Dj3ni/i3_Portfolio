@@ -22,10 +22,10 @@ body {
 }
 
 
-/* .visible {
+.pdfVisible {
     display: block;
     z-index: 100;
-} */
+} 
 
 .pdf {
     width: 80%;
